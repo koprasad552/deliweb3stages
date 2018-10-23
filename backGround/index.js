@@ -20,7 +20,7 @@ try {
       const nearest = require('./nearestAllocation');
 
       const sendTo = require('./sendAll');
-//asdfghjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+//deliforce 3 stages
 
       //connect to db
       db.then(() => {
