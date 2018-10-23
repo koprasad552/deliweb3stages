@@ -10,7 +10,7 @@ Resources:
       Timeout: 300
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: ./backGroundJob
+      CodeUri: ./backGround
       Policies: AWSLambdaFullAccess
       Role: arn:aws:iam::059447091843:role/prodcrosspipelinerole-poc
 
@@ -21,6 +21,6 @@ Resources:
       Timeout: 300
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: ./customMessage
+      CodeUri: ./customMessagejob
       Policies: AWSLambdaFullAccess
       Role: arn:aws:iam::059447091843:role/prodcrosspipelinerole-poc
