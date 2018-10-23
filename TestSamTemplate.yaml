@@ -12,7 +12,7 @@ Resources:
       Runtime: nodejs6.10
       CodeUri: ./backGround
       Policies: AWSLambdaFullAccess
-      Role: arn:aws:iam::539977196287:role/favas-poc
+      Role: arn:aws:iam::059447091843:role/prodcrosspipelinerole-poc
 
   DeliforceCustomeMessageMethod:
     Type: AWS::Serverless::Function
@@ -23,4 +23,4 @@ Resources:
       Runtime: nodejs6.10
       CodeUri: ./customMessagejob
       Policies: AWSLambdaFullAccess
-      Role: arn:aws:iam::539977196287:role/favas-poc
+      Role: arn:aws:iam::059447091843:role/prodcrosspipelinerole-poc
