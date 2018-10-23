@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: 'Deliforce deliweb Lambda'
+Resources:
+  
+  DeliforcebackgroundjobMethod:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: backGround
+      Timeout: 300
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: ./backGround
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::408616256231:role/3stages-poc
+
+  DeliforceCustomeMessageMethod:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: customMessagejob
+      Timeout: 300
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: ./customMessagejob
+      Policies: AWSLambdaFullAccess
+      Role: arn:aws:iam::408616256231:role/3stages-poc
