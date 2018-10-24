@@ -20,7 +20,7 @@ try {
       const nearest = require('./nearestAllocation');
 
       const sendTo = require('./sendAll');
-//deliforce 3 stages
+//changing the name and mail.id
 
       //connect to db
       db.then(() => {
